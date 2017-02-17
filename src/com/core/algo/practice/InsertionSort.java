@@ -7,7 +7,7 @@ public class InsertionSort {
 		for (int i = 0; i < n; i++) {
 			for (int j = i; j > 0; j--) {
 				if (a[j] < a[j - 1]) {
-					swap(a, j, j - 1);
+					SortHelper.swap(a, j, j - 1);
 				} else {
 					break;
 				}
@@ -16,9 +16,5 @@ public class InsertionSort {
 	}
 
 	
-	public static void swap(int[] a, int i , int j){
-		int temp = a[i];
-		a[i] = a[j];
-		a[j] = temp;
-	}
+	
 }

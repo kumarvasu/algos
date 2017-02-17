@@ -8,7 +8,7 @@ public class Shuffler {
 		Random rand = new Random();
 		for (int i = 0; i < a.length; i++) {
 			int r = rand.nextInt(i + 1);
-			InsertionSort.swap(a, i, r);
+			SortHelper.swap(a, i, r);
 		}
 	}
 

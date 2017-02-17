@@ -14,7 +14,7 @@ public class ShellSort {
 			for(int i = 0; i< n; i++){
 				for(int j = i; j >= h; j=j-h){
 					if(a[j] < a[j-h]){
-						InsertionSort.swap(a, j-h, j);
+						SortHelper.swap(a, j-h, j);
 					} else {
 						break;
 					}

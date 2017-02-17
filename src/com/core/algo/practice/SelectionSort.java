@@ -11,7 +11,7 @@ public class SelectionSort {
 					min = j;
 				}
 			}
-			InsertionSort.swap(a, i, min);
+			SortHelper.swap(a, i, min);
 		}
 	}
 
